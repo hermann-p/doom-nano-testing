@@ -18,7 +18,7 @@
 
 (setq default-frame-alist
       (append (list
-               '(font . "Hack Nerd Font:style=Regular:size=16")
+               '(font . "Roboto Mono:style=Regular:size=16")
                '(min-height . 1)  '(height     . 45)
                '(min-width  . 1) '(width      . 81)
                '(vertical-scroll-bars . nil)
