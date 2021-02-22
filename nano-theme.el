@@ -663,25 +663,6 @@ function is a convenience wrapper used by `describe-package-1'."
     (set-face 'ivy-virtual                             'nano-face-faded)
     (set-face 'ivy-yanked-word                         'nano-face-faded)))
 
-(defun nano-theme--helm ()
-  "Derive helm faces from nano faces."
-  (with-eval-after-load 'helm
-    (set-face 'helm-selection                '(nano-face-strong nano-face-subtle))
-    (set-face 'helm-match                                       'nano-face-strong)
-    (set-face 'helm-source-header                              'nano-face-salient)
-    (set-face 'helm-swoop-target-line-face   '(nano-face-strong nano-face-subtle))
-    (set-face 'helm-visible-mark                                'nano-face-strong)
-    (set-face 'helm-moccur-buffer                               'nano-face-strong)
-    (set-face 'helm-ff-file                                      'nano-face-faded)
-    (set-face 'helm-ff-prefix                                   'nano-face-strong)
-    (set-face 'helm-ff-dotted-directory                          'nano-face-faded)
-    (set-face 'helm-ff-directory                                'nano-face-strong)
-    (set-face 'helm-ff-executable                               'nano-face-popout)
-    (set-face 'helm-grep-match                                  'nano-face-strong)
-    (set-face 'helm-grep-file                                    'nano-face-faded)
-    (set-face 'helm-grep-lineno                                  'nano-face-faded)
-    (set-face 'helm-grep-finish                                'nano-face-default)))
-
 (defun nano-theme--company ()
   "Derive company tooltip window from nano faces."
   (with-eval-after-load 'company
@@ -721,7 +702,6 @@ function is a convenience wrapper used by `describe-package-1'."
   (nano-theme--rst)
   (nano-theme--markdown)
   (nano-theme--ivy)
-  (nano-theme--helm)
 ;  (nano-theme--hl-line)
   (nano-theme--company))
 
